@@ -56,12 +56,12 @@ export class LogDto {
   stream?: Record<string, string>;
   @ApiProperty({
     description: 'Subject application',
-    examples: [
+    example: [
       'app.nibyou.com',
       'app.dev.nibyou.com',
       'onboarding.nibyou.com',
       'web.nibyou.com',
-    ],
+    ].join(', '),
   })
   application: string;
   @ApiProperty({
