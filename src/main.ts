@@ -23,8 +23,5 @@ import { NestExpressApplication } from '@nestjs/platform-express';
   const document = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('api', app, document);
 
-  return app.listen(
-    process.env.PORT || 3000,
-    process.env.ENV === 'prod' ? 'node' : 'localhost',
-  );
+  return app.listen(process.env.PORT || 3000, '0.0.0.0');
 })();

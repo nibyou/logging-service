@@ -2,7 +2,11 @@
   <img src="https://content.luca-kiebel.de/websites/nibyou.de/img/NIBYOU%20logo%20and%20claim%20-%20digital%20-%20big.png" alt="Nibyou Logo">
 </p>
 
-# Nibyou Microservice
+# Nibyou Logging Microservice
+
+Used to add a JWT Authentication Layer in front of our Grafana Loki central Logging to allow frontends to send logs as well.
+
+For this to work you first have to create a Loki server and put it behind a reverse proxy that adds Basic Auth. This can be done with nginx for example.
 
 ## Installation
 
