@@ -6,7 +6,7 @@ volumes:
 
 services:
   node:
-    container_name: node
+    container_name: logging-service
     build:
       context: .
       dockerfile: Dockerfile
